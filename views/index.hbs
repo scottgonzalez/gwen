@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Gwen</title>
+</head>
+<body>
+
+<h1>Gwen</h1>
+<h2>GitHub Wiki Notifications</h2>
+
+{{#if error}}
+	<p>Please correct the following errors:</p>
+	<ul>
+	{{#each error}}
+		<li>{{this}}</li>
+	{{/each}}
+	</ul>
+{{/if}}
+
+<form method="post" action="/subscribe">
+	<div>
+		<label for="repo">GitHub repo (username/reponame):</label>
+		<input name="repo" id="repo">
+	</div>
+
+	<div>
+		<label for="email">Email Address:</label>
+		<input name="email" id="email">
+	</div>
+
+	<button type="submit">Subscribe</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "gwen",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "3.2.0",
+    "hbs": "2.1.0",
+    "leveldb": "0.7.1",
+    "nodemailer": "0.4.1",
+    "express-form": "0.8.1",
+    "connect-flash": "0.1.0"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+  "devDependencies": {
+    "grunt": "0.4.1",
+    "grunt-contrib-jshint": "0.4.3"
+  }
+}
